@@ -1,0 +1,34 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center content on the page */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #7097d1;   /* light background */
+  color: #222;          /* dark text */
+}
+
+/* Spacing between headings */
+h1, h2 {
+  margin: 8px 0;
+}
+
+/* Headings size */
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #555;
+}
