@@ -64,3 +64,17 @@ button {
 button:hover {
   background: #1d4ed8;
 }
+
+.btn-clear {
+  margin-top: 8px;
+  padding: 10px;
+  background: #bd6724;   /* light gray */
+  color: #111827;       /* dark text */
+  border: 1px solid #d82088;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-clear:hover {
+  background: #94bbf5;
+}
