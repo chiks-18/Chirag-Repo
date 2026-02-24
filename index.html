@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Registration</title>
+  <title>Register</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Registration done for nothing</h1>
+    <h1>Register</h1>
 
     <form>
       <label for="name">Name</label>
@@ -18,12 +18,17 @@
 
       <label for="mobile">Mobile Number</label>
       <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
-        
-      <button type="submit">Register</button>
-      <button type="reset" class="btn-clear">Clear</button>
 
-
+      <div class="actions">
+        <button type="submit">Register</button>
+        <button type="reset" class="btn-clear">Clear</button>
+      </div>
     </form>
+
+    <p class="switch">
+      Already have an account?
+      <a href="login.html">Login here</a>
+    </p>
   </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Center the form */
+/* Center the card */
 body {
   min-height: 100vh;
   display: flex;
@@ -15,12 +15,12 @@ body {
   background: #f2f4f7;
 }
 
-/* Form card */
+/* Card container */
 .container {
   background: #ffffff;
   padding: 24px 28px;
   border-radius: 8px;
-  width: 320px;
+  width: 340px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,35 +46,59 @@ label {
 input {
   padding: 8px 10px;
   font-size: 14px;
-  border: 1px solid #468464;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-/* Button */
-button {
+/* Button group */
+.actions {
+  display: flex;
+  gap: 10px;
   margin-top: 16px;
+}
+
+/* Primary button */
+button[type="submit"] {
+  flex: 1;
   padding: 10px;
   background: #2563eb;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-button:hover {
+button[type="submit"]:hover {
   background: #1d4ed8;
 }
 
+/* Clear button */
 .btn-clear {
-  margin-top: 8px;
+  flex: 1;
   padding: 10px;
-  background: #bd6724;   /* light gray */
-  color: #111827;       /* dark text */
-  border: 1px solid #d82088;
+  background: #e5e7eb;
+  color: #111827;
+  border: 1px solid #d1d5db;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .btn-clear:hover {
-  background: #94bbf5;
+  background: #d1d5db;
+}
+
+/* Switch link */
+.switch {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
 }
