@@ -3,31 +3,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Center the card */
+/* Page background + font */
 body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f2f4f7;
+  background: #e6e1ff; /* light lavender */
+  font-family: Algerian, "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 /* Card container */
 .container {
   background: #ffffff;
-  padding: 24px 28px;
-  border-radius: 8px;
-  width: 340px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 28px 32px;
+  border-radius: 14px;
+  width: 360px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #d8d2ff;
 }
 
 /* Heading */
 h1 {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  color: #4c1d95; /* deep violet */
 }
 
 /* Form layout */
@@ -40,63 +43,74 @@ form {
 label {
   margin: 10px 0 4px;
   font-size: 14px;
+  color: #4b5563;
+  letter-spacing: 0.5px;
 }
 
 /* Inputs */
 input {
-  padding: 8px 10px;
+  padding: 10px 12px;
   font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #c7c1ff;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.15);
 }
 
 /* Button group */
 .actions {
   display: flex;
-  gap: 10px;
-  margin-top: 16px;
+  gap: 12px;
+  margin-top: 18px;
 }
 
 /* Primary button */
 button[type="submit"] {
   flex: 1;
   padding: 10px;
-  background: #2563eb;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
   color: #ffffff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  letter-spacing: 0.5px;
 }
 
 button[type="submit"]:hover {
-  background: #1d4ed8;
+  opacity: 0.9;
 }
 
 /* Clear button */
 .btn-clear {
   flex: 1;
   padding: 10px;
-  background: #e5e7eb;
-  color: #111827;
-  border: 1px solid #d1d5db;
-  border-radius: 4px;
+  background: #ede9fe;
+  color: #4c1d95;
+  border: 1px solid #c7c1ff;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .btn-clear:hover {
-  background: #d1d5db;
+  background: #ddd6fe;
 }
 
 /* Switch link */
 .switch {
-  margin-top: 14px;
+  margin-top: 16px;
   text-align: center;
   font-size: 14px;
+  color: #374151;
 }
 
 .switch a {
-  color: #2563eb;
+  color: #6d28d9;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .switch a:hover {
