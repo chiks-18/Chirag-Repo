@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000000; /* BLACK BACKGROUND */
+  background: #d4f7d4; /* LIGHT GREEN BACKGROUND */
   font-family: Algerian, "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
@@ -21,8 +21,8 @@ body {
   padding: 28px 32px;
   border-radius: 14px;
   width: 360px;
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
-  border: 1px solid #333;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d5db;
 }
 
 /* Heading */
@@ -30,7 +30,7 @@ h1 {
   text-align: center;
   margin-bottom: 18px;
   letter-spacing: 1px;
-  color: #a78bfa; /* light violet */
+  color: #1f2937;
 }
 
 /* Form layout */
@@ -43,23 +43,26 @@ form {
 label {
   margin: 10px 0 4px;
   font-size: 14px;
-  color: #d1d5db; /* light gray */
+  color: #374151;
 }
 
-/* Inputs */
-input {
+/* Inputs + Textarea */
+input,
+textarea {
   padding: 10px 12px;
   font-size: 14px;
-  border: 1px solid #444;
+  border: 1px solid #cbd5e1;
   border-radius: 6px;
   outline: none;
   background: #1f1f1f;
   color: #ffffff;
 }
 
-input:focus {
-  border-color: #7c3aed;
-  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.3);
+/* Focus effect */
+input:focus,
+textarea:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
 }
 
 /* Button group */
@@ -73,7 +76,7 @@ input:focus {
 button[type="submit"] {
   flex: 1;
   padding: 10px;
-  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  background: linear-gradient(135deg, #10b981, #047857);
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -88,15 +91,15 @@ button[type="submit"]:hover {
 .btn-clear {
   flex: 1;
   padding: 10px;
-  background: #222;
-  color: #a78bfa;
-  border: 1px solid #444;
+  background: #d1fae5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .btn-clear:hover {
-  background: #333;
+  background: #a7f3d0;
 }
 
 /* Switch link */
@@ -108,7 +111,7 @@ button[type="submit"]:hover {
 }
 
 .switch a {
-  color: #a78bfa;
+  color: #047857;
   text-decoration: none;
   font-weight: bold;
 }
