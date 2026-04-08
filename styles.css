@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #e6e1ff; /* light lavender */
+  background: #cce7ff; /* LIGHT BLUE BACKGROUND */
   font-family: Algerian, "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
@@ -21,8 +21,8 @@ body {
   padding: 28px 32px;
   border-radius: 14px;
   width: 360px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  border: 1px solid #d8d2ff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b6d4fe;
 }
 
 /* Heading */
@@ -30,7 +30,7 @@ h1 {
   text-align: center;
   margin-bottom: 18px;
   letter-spacing: 1px;
-  color: #4c1d95; /* deep violet */
+  color: #1d4ed8;
 }
 
 /* Form layout */
@@ -52,16 +52,16 @@ input,
 textarea {
   padding: 10px 12px;
   font-size: 14px;
-  border: 1px solid #c7c1ff;
+  border: 1px solid #93c5fd;
   border-radius: 6px;
   outline: none;
-  background: #1f1f1f;
-  color: #ffffff;
 }
 
-input:focus {
-  border-color: #7c3aed;
-  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.15);
+/* Focus effect */
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
 /* Button group */
@@ -75,7 +75,7 @@ input:focus {
 button[type="submit"] {
   flex: 1;
   padding: 10px;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: linear-gradient(135deg, #10b981, #047857);
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -90,15 +90,15 @@ button[type="submit"]:hover {
 .btn-clear {
   flex: 1;
   padding: 10px;
-  background: #ede9fe;
-  color: #4c1d95;
-  border: 1px solid #c7c1ff;
+  background: #e0f2fe;
+  color: #1d4ed8;
+  border: 1px solid #93c5fd;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .btn-clear:hover {
-  background: #ddd6fe;
+  background: #bae6fd;
 }
 
 /* Switch link */
@@ -110,7 +110,7 @@ button[type="submit"]:hover {
 }
 
 .switch a {
-  color: #6d28d9;
+  color: #2563eb;
   text-decoration: none;
   font-weight: bold;
 }
